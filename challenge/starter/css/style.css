@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 00px;
+}
+
+h2{
+  font-size: var(--section-title-font);
+  color: var(--secondary-color);
+  border-right: solid var(--primary-color) 3px;
+}
+p {
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--textbox-color);
+}
+
+.hero-banner{
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 200px;
+}
+
+:root{
+  --primary-color: rgb(93, 133, 178);
+  --secondary-color: rgb(81, 6, 6);
+  --textbox-font-color: black;
+  --section-title-font: 3rem;
+
+}
+
+@media screen {
+
+  
+}
+
+section{
+  display: flex;
+  place-items: 33% 66%;
+  grid-template-columns: 1fr, 2fr;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5";
+}
+
+.project1{
+  background-image: url();
+  grid-area: project1;
+}
+
+.project2{
+  background-image: url();
+  grid-area: project2;
+}
+
+.project3{
+  background-image: url();
+  grid-area: project3;
+}
+
+.project4{
+  background-image: url();
+  grid-area: project4;
+}
+
+.project5{
+  background-image: url();
+  grid-area: project5;
+}
+
+footer p::after{
+  content: "smileEmohi";
+}
