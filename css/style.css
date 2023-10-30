@@ -45,36 +45,46 @@ header, footer {
   justify-content: space-around;
   align-content: stretch;
   background-color: var(--background-color1);
+  height: 50px;
 }
 
 .main-logo{
   background-color: var(--background-color1);
-
 }
 
 .hero-banner{
   background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
-  height: 200px;
-}
-/*HOW TO INSERT A FOREGROUND PIC??? A PIC WITHOUT A BACKGROUND */
-.profile{
-  background-color: none;
-  background-image: url(../images/woman-7384787_1280.png);
-  align-self: flex-end;
+  height: 400px;
 }
 
-/* I CANNOT CHANGE THIS FROM FLEX BUT THE WIDTH OF THE FIRST ELEMENT NEEDS TO REMAIN THE SAME!!*/
-section{
-  display: flex;
-  padding: 20px;
+/*HOW TO INSERT A FOREGROUND PIC??? A PIC WITHOUT A BACKGROUND */
+.profile{
+opacity: 50;  
+background-image: url(../images/woman-7384787_1280.png);
 }
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  margin: 20px;
+}
+
+/*
+section h2{
+  width: 200px
+}
+
+section div{
+  width: 600px;
+  margin: 20px;
+}
+*/
 
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 20px;
   grid-template-areas: 
   "project1 project1"
   "project1 project1"
@@ -87,8 +97,7 @@ section{
   background-size: cover;
   grid-area: project1;
   border: var(--highlight-color) solid 10px;
-  margin: 10px;
-  padding: 20px;
+  padding-top: 300px;
 }
 
 .project2{
@@ -96,14 +105,8 @@ section{
   background-size: cover;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
-  margin: 10px;
   grid-area: project2;
-}
-
-/*TRYING TO MOVE THE TEXT TO THE MIDDLE OF THE DIV ELEMENT BUT IT IS NOT MOVING!!*/
-.project2 h2{
-align-self: flex-end;
-background-color: #617BE3;
+  padding-top: 120px;
 }
 
 .project3{
@@ -111,8 +114,9 @@ background-color: #617BE3;
   background-size: cover;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
-  margin: 10px;
   grid-area: project3;
+  padding-top: 120px;
+
 }
 
 .project4{
@@ -120,8 +124,9 @@ background-color: #617BE3;
   background-size: cover;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
-  margin: 10px;
   grid-area: project4;
+  padding-top: 120px;
+
 }
 
 .project5{
@@ -129,13 +134,25 @@ background-color: #617BE3;
   background-size: cover;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
-  margin: 10px;
   grid-area: project5;
+  padding-top: 120px;
+}
+
+#contact nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
 }
 
 footer p::after{
   content: 128540;
 }
 
+footer p{
+  height: 100%;
+  align-items: center;
+}
+
+/* max 1200px and 600px */
 @media screen {
 }
