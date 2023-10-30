@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  background-color: var(--background-color2);
+}
+
+:root{
+  --primary-color: #550A46;
+  --secondary-color: #344a86;
+  --highlight-color: #9ACEFF;
+  --background-color1: #617BE3;
+  --background-color2: #FCF5ED;
+  --textbox-font-color: black;
+  --section-title-font: 3rem;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary-color);
+  margin: 00px;
+}
+
+h2{
+  font-size: var(--section-title-font);
+  border-right: solid var(--primary-color) 3px;
+  width: 200px;
+}
+p {
+  margin: 0;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+  background-color: var(--background-color1);
+}
+
+.main-logo{
+  background-color: var(--background-color1);
+
+}
+
+.hero-banner{
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  height: 200px;
+}
+/*HOW TO INSERT A FOREGROUND PIC??? A PIC WITHOUT A BACKGROUND */
+.profile{
+  background-color: none;
+  background-image: url(../images/woman-7384787_1280.png);
+  align-self: flex-end;
+}
+
+/* I CANNOT CHANGE THIS FROM FLEX BUT THE WIDTH OF THE FIRST ELEMENT NEEDS TO REMAIN THE SAME!!*/
+section{
+  display: flex;
+  padding: 20px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  grid-template-areas: 
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5";
+}
+
+.project1{
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  grid-area: project1;
+  border: var(--highlight-color) solid 10px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.project2{
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  height: 200px; 
+  border: var(--highlight-color) solid 10px;
+  margin: 10px;
+  grid-area: project2;
+}
+
+/*TRYING TO MOVE THE TEXT TO THE MIDDLE OF THE DIV ELEMENT BUT IT IS NOT MOVING!!*/
+.project2 h2{
+align-self: flex-end;
+background-color: #617BE3;
+}
+
+.project3{
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  height: 200px; 
+  border: var(--highlight-color) solid 10px;
+  margin: 10px;
+  grid-area: project3;
+}
+
+.project4{
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  height: 200px; 
+  border: var(--highlight-color) solid 10px;
+  margin: 10px;
+  grid-area: project4;
+}
+
+.project5{
+  background-image: url(../images/ales-nesetril-unsplash.jpg);
+  background-size: cover;
+  height: 200px; 
+  border: var(--highlight-color) solid 10px;
+  margin: 10px;
+  grid-area: project5;
+}
+
+footer p::after{
+  content: 128540;
+}
+
+@media screen {
+}
