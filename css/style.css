@@ -50,7 +50,6 @@ header, footer {
   text-align: center;
   background-color: var(--background-color1);
   height: 100px;
-  -webkit-text-fill-color: var(--background-color2);
 }
 
 header nav{ 
@@ -60,9 +59,13 @@ header nav{
   height: 20px;
 }
 
+header h1{
+  color:var(--background-color2)
+}
+
 header nav a{
   color: var(--primary-color);
-             }
+}
 
 header a:hover{
 background: var(--highlight-color);
