@@ -12,6 +12,7 @@
   --textbox-font-color: black;
   --section-title-font: 3rem;
 
+
 }
 
 body {
@@ -49,7 +50,7 @@ header, footer {
   text-align: center;
   background-color: var(--background-color1);
   height: 100px;
-  -webkit-text-fill-color: #FCF5ED;
+  -webkit-text-fill-color: var(--background-color2);
 }
 
 header nav{ 
@@ -61,7 +62,6 @@ header nav{
 header a:hover{
 background: var(--highlight-color);
 }
-
 
 
 .main-logo{
@@ -88,9 +88,15 @@ section h2{
 
 section div{
   width: 600px;
-  margin: 20px;
+  margin: 10px;
 }
 */
+
+.page-section div,
+.contact div{
+  margin-left: 10px;
+}
+
 
 .container{
   display: grid;
@@ -176,7 +182,7 @@ footer p{
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .container{
     display: grid;
     grid-template-columns: 1fr;
