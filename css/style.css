@@ -36,17 +36,33 @@ h2{
   border-right: solid var(--primary-color) 3px;
   width: 200px;
 }
+
 p {
   margin: 0;
 }
 
 header, footer {
   display: flex;
+  padding: 10px;
   justify-content: space-around;
   align-content: stretch;
+  text-align: center;
   background-color: var(--background-color1);
-  height: 50px;
+  height: 100px;
+  -webkit-text-fill-color: #FCF5ED;
 }
+
+header nav{ 
+  display: inline;
+  justify-content: space-around;  
+  align-items: center;
+  height: 20px;
+}
+header a:hover{
+background: var(--highlight-color);
+}
+
+
 
 .main-logo{
   background-color: var(--background-color1);
@@ -55,16 +71,11 @@ header, footer {
 .hero-banner{
   background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
-  height: 400px;
+  height: 250px;
 }
 
-/*HOW TO INSERT A FOREGROUND PIC??? A PIC WITHOUT A BACKGROUND */
-.profile{
-opacity: 50;  
-background-image: url(../images/woman-7384787_1280.png);
-}
 
-section{
+section {
   display: grid;
   grid-template-columns: 1fr 8fr;
   margin: 20px;
@@ -92,9 +103,16 @@ section div{
   "project4 project5";
 }
 
+.container div:hover
+{
+  font: 150% sans-serif;
+  opacity: 1.0;
+}
+
 .project1{
   background-image: url(../images/02-portfolio-1.jpg);
   background-size: cover;
+  opacity: 0.7;
   grid-area: project1;
   border: var(--highlight-color) solid 10px;
   padding-top: 300px;
@@ -103,6 +121,7 @@ section div{
 .project2{
   background-image: url(../images/02-portfolio-2.jpg);
   background-size: cover;
+  opacity: 0.7;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
   grid-area: project2;
@@ -112,6 +131,7 @@ section div{
 .project3{
   background-image: url(../images/02-portfolio-3.jpg);
   background-size: cover;
+  opacity: 0.7;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
   grid-area: project3;
@@ -120,8 +140,9 @@ section div{
 }
 
 .project4{
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/xr-7499160_1280.jpg);
   background-size: cover;
+  opacity: 0.7;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
   grid-area: project4;
@@ -132,11 +153,13 @@ section div{
 .project5{
   background-image: url(../images/ales-nesetril-unsplash.jpg);
   background-size: cover;
+  opacity: 0.7;
   height: 200px; 
   border: var(--highlight-color) solid 10px;
   grid-area: project5;
   padding-top: 120px;
 }
+
 
 #contact nav{
   display: flex;
@@ -145,7 +168,7 @@ section div{
 }
 
 footer p::after{
-  content: 128540;
+  content: "😎";
 }
 
 footer p{
@@ -153,6 +176,17 @@ footer p{
   align-items: center;
 }
 
-/* max 1200px and 600px */
-@media screen {
+@media only screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 200px 200px 200px 200px;
+    grid-template-areas: 
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5";
+  }
+
 }
