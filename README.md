@@ -1,10 +1,10 @@
 # Unit 2 Challenge: Portfolio
 
-## My Web-developer portfolio 
+# My Web-developer portfolio 
 
-A potential portfolio website built to the acceptance criteria below: 
+A potential portfolio website built using CSS and HTML to the acceptance criteria below.
 
-## Acceptance Criteria
+# Acceptance Criteria
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
@@ -15,10 +15,13 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 * When images of the applications are clicked then the user is taken to that deployed application
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
-## Website Details
-Built with HTML and CSS. Special concentration paid to arranging blocks in a flex-grid pattern that will respond to screen size changes.
+# Website Details
+Built with HTML and CSS. Special concentration paid to arranging blocks in a flex-grid pattern that will respond to screen size changes. 
 
-## Website Images
-Completed Website    - [Large Desktop Screen](./complete%20website/Portfolio%20-%20desktop%20version.png)
-                    - [Small Screen demo of functionality](./complete%20website/Gigi's%20Web%20Developer%20Portfolio%20Small%20Screen%20demo.gif)
+Please note: The Work section includes projects I have worked on and projects I hope to be able to work on soon. 
+
+# Website Images
+Completed Website demo for two diferent acreen sizes
+- [Large Desktop Screen](./complete%20website/Portfolio%20-%20desktop%20version.png)
+- [Small Screen demo of functionality](./complete%20website/Gigi's%20Web%20Developer%20Portfolio%20Small%20Screen%20demo.gif)
 
