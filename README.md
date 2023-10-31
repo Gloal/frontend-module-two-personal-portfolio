@@ -19,6 +19,6 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 Built with HTML and CSS. Special concentration paid to arranging blocks in a flex-grid pattern that will respond to screen size changes.
 
 ## Website Images
-Complete Website    - [Large Desktop Screen](./complete%20website/Portfolio%20-%20desktop%20version.png)
+Completed Website    - [Large Desktop Screen](./complete%20website/Portfolio%20-%20desktop%20version.png)
                     - [Small Screen demo of functionality](./complete%20website/Gigi's%20Web%20Developer%20Portfolio%20Small%20Screen%20demo.gif)
 
