@@ -11,8 +11,6 @@
   --background-color2: #FCF5ED;
   --textbox-font-color: black;
   --section-title-font: 3rem;
-
-
 }
 
 body {
@@ -52,6 +50,7 @@ header, footer {
   height: 100px;
 }
 
+/* Header section at the top */
 header nav{ 
   display: inline;
   justify-content: space-around;  
@@ -71,11 +70,11 @@ header a:hover{
 background: var(--highlight-color);
 }
 
-
 .main-logo{
   background-color: var(--background-color1);
 }
 
+/* banner section */
 .hero-banner{
   background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
@@ -105,6 +104,7 @@ section div{
   margin-left: 10px;
 }
 
+/* Work section */ 
 
 .container{
   display: grid;
@@ -174,7 +174,7 @@ section div{
   padding-top: 120px;
 }
 
-
+/* Contact section */
 #contact nav{
   display: flex;
   justify-content: space-around;
@@ -190,6 +190,7 @@ footer p{
   align-items: center;
 }
 
+/* Size changes for small screens - change the work section into one column but height stays the same */
 @media only screen and (max-width: 800px) {
   .container{
     display: grid;
